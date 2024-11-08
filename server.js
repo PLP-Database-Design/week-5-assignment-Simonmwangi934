@@ -3,8 +3,9 @@ const mysql = require("mysql2");
 const dotenv = require("dotenv").config();
 const app = express()
 
-
-// MySQL connection setup
+// listen to the server
+const PORT = 3000
+    // MySQL connection setup
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
